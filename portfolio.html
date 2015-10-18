@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Homepage</title>
+  </head>
+  <body>
+    <div id = "page">
+      <div id = "logo">
+        <h1 id = "title">VIJAY PILLAI</h1>
+      </div>
+      <ul id = "navigation">
+        <li><a id = "nav" href="index.html">HOME</a></li>
+        <li>|
+        <li><a id = "nav" href="portfolio.html">PORTFOLIO</a></li>
+        <li>|
+        <li><a id = "nav" href="resume.html">RESUME</a></li>
+        <li>|
+        <li><a id = "nav" href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+    <div id = "portfolio">
+      <p>Coming Soon</p>
+  </div>
+  <script>
+    var h = window.innerHeight;
+    h = h-250;
+    document.getElementById('portfolio').style.height=String(h).concat("px");
+  </script>
+  </body>
+</html>
