@@ -40,6 +40,13 @@ a {
   text-decoration:none;
   color: black;
 }
+#navA{
+  text-decoration:underline;
+  color: black;
+}
+#navA:hover{
+  text-shadow: 2px 2px 7px #9D9D9D;
+}
 #nav:hover{
   text-shadow: 2px 2px 7px #9D9D9D;
 }
