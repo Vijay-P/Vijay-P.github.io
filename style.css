@@ -28,6 +28,22 @@ body {
   border-bottom: 2px solid #000;
   text-align: center;
 }
+#psquare {
+  width: 800px;
+  padding: 2px 2px;
+  margin: 0px auto;
+  border: 0px solid #000;
+  text-align: left;
+  text-decoration: none;
+  list-style-type: none;
+  background-color: #D8D8D8;
+}
+#psquare_entry{
+  font-size: 14pt;
+}
+#psquare_ec{
+  padding: 0px 20px;
+}
 #navigation li{
   display: inline;
   margin: 0px 5px;
