@@ -11,25 +11,58 @@
     </div>
     <ul id = "navigation">
       <li><a id = "nav" href="index.html">HOME</a></li>
-      <li>|
-        <li><a id = "navA" href="portfolio.html">PORTFOLIO</a></li>
-        <li>|
-          <li><a id = "nav" href="resume.html">RESUME</a></li>
-          <li>|
-            <li><a id = "nav" href="contact.html">CONTACT</a></li>
-          </ul>
-        </div>
-        <div id = "portfolio">
-          <ul id = "psquare">
-            <li><a id = "psquare_entry">
-              <div id=psquare_ec>
-                <b><font style="font-size: 16pt";>Skillset:</font></b>
-                <br>Java: 5/5 confidence level
-                <br>Python: 4/5 confidence level
-                <br>HTML/CSS: 3/5 confidence level
-                <br>Javascript: 2/5 confidence level
-            </div></a></li>
-          </ul>
-        </div>
-      </body>
-      </html>
+      <li>|</li>
+      <li><a id = "navA" href="portfolio.html">PORTFOLIO</a></li>
+      <li>|</li>
+      <li><a id = "nav" href="resume.html">RESUME</a></li>
+      <li>|</li>
+      <li><a id = "nav" href="about.html">ABOUT</a></li>
+      <li>|</li>
+      <li><a id = "nav" href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+  <div id = "skillset">
+    <p><b><font style="font-size: 18pt";>Skillset:</font></b></p>
+    <ul id = "psquare">
+      <li><a id = "psquare_entry">
+        <div id=psquare_ec>
+          <b><font style="font-size: 16pt";>Programming Languages:</font></b>
+          <br>Java: 5/5 confidence level
+          <br>Python: 4/5 confidence level
+          <br>HTML/CSS: 3/5 confidence level
+          <br>Javascript: 2/5 confidence level (just learning)
+        </div></a></li>
+      </ul>
+      <br>
+      <ul id = "psquare">
+        <li><a id = "psquare_entry">
+        <div id=psquare_ec>
+          <b><font style="font-size: 16pt";>Tools:</font></b>
+          <br>Atom Editor
+          <br>JetBrains Pycharm
+          <br>IntelliJ IDEA
+          <br>NetBeans
+          <br>Github
+          <br>BitBucket
+          <br>MS Office
+          <br>Libre Office
+        </div></a></li>
+      </ul>
+      <br>
+      <ul id = "psquare">
+        <li><a id = "psquare_entry">
+        <div id=psquare_ec>
+          <b><font style="font-size: 16pt";>Operating Systems:</font></b>
+          <br>Windows: XP, 7, 8, 10
+          <br>Mac OSX
+          <br>RedHat and Debian-based Linux Systems
+        </div></a></li>
+      </ul>
+    </div>
+    <script>
+      var h = window.innerHeight;
+      h = h-250;
+      document.getElementById('skillset').style.height=String(h).concat("px");
+    </script>
+  </body>
+  </html>
