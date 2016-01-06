@@ -94,6 +94,9 @@ p {
 #skillset {
   overflow:auto;
 }
+#port {
+  overflow:auto;
+}
 #resume p {
   direction: ltr;
   color: #00000a;
