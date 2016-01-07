@@ -148,8 +148,12 @@ h1{
 }
 
 @media only screen and (max-width: 480px){
+  #container, #header, #content, #footer {
+    float: none !important;
+    width: device-width !important;
+  }
   body{
-    max-width: 100%;
+    width: min-width !important;
   }
   #navigation li{
     display: block;
@@ -163,7 +167,7 @@ h1{
     text-align: center;
   }
   #navigation{
-    width: calc(max-width * 70.3125%);
+    width: 35.3125%;
     padding: 15px 30px;
     margin: 0px auto 0px auto;
     border-top: 2px solid #000;
@@ -172,5 +176,23 @@ h1{
   }
   #divider{
     visibility: hidden;
+  }
+  #ppic{
+    display: table-header-group;
+  }
+  #pdesc{
+    display: table-footer-group;
+    padding-bottom: 10px;
+  }
+  #profile{
+    padding-left: calc(50%);
+    padding-bottom: 10px;
+  }
+  #profile-pic{
+    width: 250px;
+    height: 250px;
+  }
+  #index{
+    display: table-cell;
   }
 }
