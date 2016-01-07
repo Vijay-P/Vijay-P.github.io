@@ -30,7 +30,7 @@ body {
 }
 #page {
   max-width: 940px;
-  min-width: 720px;
+  min-width: 300px;
   margin: 10px auto 10px auto;
   padding: 20px;
 }
@@ -147,18 +147,26 @@ h1{
   text-align: center;
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 @media only screen and (max-width: 480px){
   #container, #header, #content, #footer {
     float: none !important;
     width: device-width !important;
   }
   body{
-    width: min-width !important;
+    width: device-width !important;
   }
   #navigation li{
     display: block;
     margin: 0px 5px;
     padding: 0px 20px;
+  }
+  #page {
+    max-width: device-width !important;
+    min-width: device-width !important;
   }
   #nav{
     text-align: center;
@@ -167,7 +175,7 @@ h1{
     text-align: center;
   }
   #navigation{
-    width: 35.3125%;
+    width: 70.3125%;
     padding: 15px 30px;
     margin: 0px auto 0px auto;
     border-top: 2px solid #000;
@@ -187,6 +195,9 @@ h1{
   #profile{
     padding-left: calc(50%);
     padding-bottom: 10px;
+  }
+  #ptable{
+    padding-left: 0px;
   }
   #profile-pic{
     width: 250px;
