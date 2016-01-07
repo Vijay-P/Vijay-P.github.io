@@ -9,12 +9,13 @@
     letter-spacing: 2px;
   }
   #ptable{
-    padding-top: 30px;
+    padding-top: calc(device-height * 10%);
     padding-right: 40px;
-    padding-left: 35%;
+    padding-left: calc(device-width * 19.140625%);
   }
   #profile{
-    padding-right: 250px;
+    padding-right: calc(device-width*19.140625%);
+    padding-left: 0px;
   }
   #profile-pic{
     padding-top: 20px;
