@@ -1,141 +1,141 @@
-/* Background pattern from subtlepatterns.com */
-@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
-body {
-  background-color: #F5F5F5;
-  /*background-image: url("background.png");*/
-  background-repeat: repeat-y repeat-x;
-  font-size: 150%;
-  font-family: 'Pathway Gothic One', normal !important;
-  letter-spacing: 2px;
-}
-#ptable{
-  padding-top: 30px;
-  padding-right: 40px;
-  padding-left:245px;
-}
-#profile{
-  padding-right: 250px;
-}
-#profile-pic{
-  padding-top: 20px;
-  width: 300px;
-  height: 300px;
-}
-#title {
-  font-size: 200%;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 2px 2px 7px #9D9D9D;
-}
-#page {
-  max-width: 940px;
-  min-width: 720px;
-  margin: 10px auto 10px auto;
-  padding: 20px;
-}
-#navigation {
-  width: 900px;
-  padding: 15px 30px;
-  margin: 0px auto 0px auto;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  text-align: center;
-}
-#psquare {
-  width: 800px;
-  padding: 2px 2px;
-  margin: 0px auto;
-  border: 0px solid #000;
-  text-align: left;
-  text-decoration: none;
-  list-style-type: none;
-  background-color: #D8D8D8;
-}
-#psquare_entry{
-  font-size: 14pt;
-}
-#psquare_ec{
-  padding: 0px 20px;
-  font-size: 14pt;
-}
-#navigation li{
-  display: inline;
-  margin: 0px 5px;
-  padding: 0px 20px;
-}
-a {
-  text-decoration:none;
-}
-#nav{
-  text-decoration:none;
-  color: black;
-}
-#navA{
-  text-decoration:underline;
-  color: black;
-}
-#navA:hover{
-  text-shadow: 2px 2px 7px #9D9D9D;
-}
-#nav:hover{
-  text-shadow: 2px 2px 7px #9D9D9D;
-}
-p {
- padding: 0px 245px;
- font-size: 16pt;
-}
-#address {
-  padding: 0px 295px;
-}
-#resume {
-  overflow:auto;
-  height: 450px;
-}
-#skillset {
-  overflow:auto;
-}
-#port {
-  overflow:auto;
-}
-#resume p {
-  direction: ltr;
-  color: #00000a;
-  line-height: 120%;
-  text-align: left;
-  orphans: 0;
-  widows: 0;
-  margin-bottom: 0in;
-  line-height: 100%;
-  font-weight: normal;
-  margin-bottom: 0in;
-  font-size: 16pt;
-}
-#resume a:link {
-}
-#resume ul {
-  width: 1000px;
-  padding: 1px;
-  margin:0px;
-  border-top: 0px;
-  border-bottom: 0px;
-  text-align: left;
-  list-style-type: disc;
-  list-style-position: outside;
-  list-style-image: none;
-}
-#resume ul li{
-  display: block;
-  margin: 0px 0px;
-  padding: 0px 0px;
-}
-#about {
-  overflow:auto;
-  line-height: 150%;
-  letter-spacing: 1.5pt;
-}
-#about li{
-  padding: 0px;
-}
-#about ul{
-  padding: 0px 295px;
-}
+  @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+  @media screen and (max-width: 481px);
+  body {
+    background-color: #F5F5F5;
+    /*background-image: url("background.png");*/
+    background-repeat: repeat-y repeat-x;
+    font-size: 150%;
+    font-family: 'Pathway Gothic One', normal !important;
+    letter-spacing: 2px;
+  }
+  #ptable{
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-left:245px;
+  }
+  #profile{
+    padding-right: 250px;
+  }
+  #profile-pic{
+    padding-top: 20px;
+    width: 300px;
+    height: 300px;
+  }
+  #title {
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 7px #9D9D9D;
+  }
+  #page {
+    max-width: 940px;
+    min-width: 720px;
+    margin: 10px auto 10px auto;
+    padding: 20px;
+  }
+  #navigation {
+    width: 900px;
+    padding: 15px 30px;
+    margin: 0px auto 0px auto;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    text-align: center;
+  }
+  #psquare {
+    width: 800px;
+    padding: 2px 2px;
+    margin: 0px auto;
+    border: 0px solid #000;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #D8D8D8;
+  }
+  #psquare_entry{
+    font-size: 14pt;
+  }
+  #psquare_ec{
+    padding: 0px 20px;
+    font-size: 14pt;
+  }
+  #navigation li{
+    display: inline;
+    margin: 0px 5px;
+    padding: 0px 20px;
+  }
+  a {
+    text-decoration:none;
+  }
+  #nav{
+    text-decoration:none;
+    color: black;
+  }
+  #navA{
+    text-decoration:underline;
+    color: black;
+  }
+  #navA:hover{
+    text-shadow: 2px 2px 7px #9D9D9D;
+  }
+  #nav:hover{
+    text-shadow: 2px 2px 7px #9D9D9D;
+  }
+  p {
+    padding: 0px 245px;
+    font-size: 16pt;
+  }
+  #address {
+    padding: 0px 295px;
+  }
+  #resume {
+    overflow:auto;
+    height: 450px;
+  }
+  #skillset {
+    overflow:auto;
+  }
+  #port {
+    overflow:auto;
+  }
+  #resume p {
+    direction: ltr;
+    color: #00000a;
+    line-height: 120%;
+    text-align: left;
+    orphans: 0;
+    widows: 0;
+    margin-bottom: 0in;
+    line-height: 100%;
+    font-weight: normal;
+    margin-bottom: 0in;
+    font-size: 16pt;
+  }
+  #resume a:link {
+  }
+  #resume ul {
+    width: 1000px;
+    padding: 1px;
+    margin:0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    text-align: left;
+    list-style-type: disc;
+    list-style-position: outside;
+    list-style-image: none;
+  }
+  #resume ul li{
+    display: block;
+    margin: 0px 0px;
+    padding: 0px 0px;
+  }
+  #about {
+    overflow:auto;
+    line-height: 150%;
+    letter-spacing: 1.5pt;
+  }
+  #about li{
+    padding: 0px;
+  }
+  #about ul{
+    padding: 0px 295px;
+  }
