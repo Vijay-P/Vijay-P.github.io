@@ -4,10 +4,10 @@
   #ptable{
     padding-top: calc(device-height * 10%);
     padding-right: 40px;
-    padding-left: calc(device-width * 5.140625%);
+    padding-left: 10px;
   }
   #profile{
-    padding-right: calc(device-width*15.140625%);
+    padding-right: 10px;
     padding-left: 0px;
   }
   #profile-pic{
