@@ -93,7 +93,7 @@ p {
   height: 450px;
 }
 #contact {
-  overflow: auto
+  overflow: auto;
 }
 #skillset {
   overflow:auto;
@@ -209,5 +209,32 @@ h1{
   }
   #index{
     display: table-cell;
+  }
+  p{
+    padding: 0px 15%;
+  }
+  #address{
+    padding: 0px 18%;
+  }
+  #resume {
+    overflow: visible;
+  }
+  #contact {
+    overflow: visible;
+  }
+  #skillset {
+    overflow: visible;
+  }
+  #port {
+    overflow: visible;
+  }
+  #about{
+    overflow: visible;
+  }
+  #about ul{
+    padding: 0px 18%;
+  }
+  #resume ul {
+    width: 100%;
   }
 }
