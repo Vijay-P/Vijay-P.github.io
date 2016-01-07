@@ -191,13 +191,17 @@ h1{
   #pdesc{
     display: table-footer-group;
     padding-bottom: 10px;
-  }
-  #profile{
-    padding-left: calc(50%);
-    padding-bottom: 10px;
+    padding-right: 0px;
   }
   #ptable{
-    padding-left: 0px;
+    padding-left: calc(20%);
+    width: 62%;
+    padding-right: 0px;
+  }
+  #profile{
+    padding-left: calc(17%);
+    padding-right: 0px;
+    padding-bottom: 10px;
   }
   #profile-pic{
     width: 250px;
