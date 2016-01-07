@@ -30,7 +30,7 @@ body {
 }
 #page {
   max-width: 940px;
-  min-width: 300px;
+  min-width: 240px;
   margin: 10px auto 10px auto;
   padding: 20px;
 }
@@ -151,7 +151,7 @@ h1{
   width: device-width;
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 1000px){
   #container, #header, #content, #footer {
     float: none !important;
     width: device-width !important;
@@ -160,6 +160,8 @@ h1{
     width: device-width !important;
   }
   #navigation li{
+    border-left: 1px dashed #D3D3D3;
+    border-right: 1px dashed #D3D3D3;
     display: block;
     margin: 0px 5px;
     padding: 0px 20px;
@@ -183,6 +185,7 @@ h1{
     text-align: center;
   }
   #divider{
+    position: absolute;
     visibility: hidden;
   }
   #ppic{
