@@ -92,6 +92,9 @@ p {
   overflow:auto;
   height: 450px;
 }
+#contact {
+  overflow: auto
+}
 #skillset {
   overflow:auto;
 }
