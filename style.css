@@ -18,7 +18,7 @@
     padding-left: 0px;
   }
   #profile-pic{
-    padding-top: 20px;
+    padding-top: calc(device-height * 3.350083752093802%%);
     width: 300px;
     height: 300px;
   }
