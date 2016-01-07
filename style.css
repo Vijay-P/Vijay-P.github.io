@@ -150,4 +150,21 @@ h1{
     margin: 0px 5px;
     padding: 0px 20px;
   }
+  #nav{
+    text-align: center;
+  }
+  #navA{
+    text-align: center;
+  }
+  #navigation{
+    width: device-width - 30px;
+    padding: 15px 30px;
+    margin: 0px auto 0px auto;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    text-align: center;
+  }
+  #divider{
+    visibility: hidden;
+  }
 }
