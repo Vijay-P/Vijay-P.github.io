@@ -199,7 +199,7 @@ h1{
     padding-right: 0px;
   }
   #profile{
-    padding-left: calc(17%);
+    padding-left: calc(50% - 125px);
     padding-right: 0px;
     padding-bottom: 10px;
   }
