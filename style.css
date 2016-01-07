@@ -35,7 +35,7 @@ body {
   padding: 20px;
 }
 #navigation {
-  width: 900px;
+  width: calc(max-width * 70.3125%);
   padding: 15px 30px;
   margin: 0px auto 0px auto;
   border-top: 2px solid #000;
@@ -163,7 +163,7 @@ h1{
     text-align: center;
   }
   #navigation{
-    width: calc(max-width * 70%);
+    width: calc(max-width * 70.3125%);
     padding: 15px 30px;
     margin: 0px auto 0px auto;
     border-top: 2px solid #000;
