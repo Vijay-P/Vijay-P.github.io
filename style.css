@@ -1,5 +1,6 @@
   @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
-  @media screen and (max-width: 481px);
+  @media screen and (max-width: 481px){
+  
   body {
     background-color: #F5F5F5;
     /*background-image: url("background.png");*/
