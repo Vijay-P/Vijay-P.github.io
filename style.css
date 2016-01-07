@@ -145,6 +145,9 @@ h1{
 }
 
 @media only screen and (max-width: 480px){
+  body{
+    max-width: 100%;
+  }
   #navigation li{
     display: block;
     margin: 0px 5px;
@@ -157,7 +160,7 @@ h1{
     text-align: center;
   }
   #navigation{
-    width: device-width - 30px;
+    width: calc(device-width);
     padding: 15px 30px;
     margin: 0px auto 0px auto;
     border-top: 2px solid #000;
