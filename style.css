@@ -2,8 +2,6 @@
 
 body {
   background-color: #F5F5F5;
-  /*background-image: url("background.png");*/
-  background-repeat: repeat-y repeat-x;
   font-size: 150%;
   font-family: 'Pathway Gothic One', normal !important;
   letter-spacing: 2px;
@@ -156,19 +154,12 @@ h1{
     float: none !important;
     width: device-width !important;
   }
-  body{
-    width: device-width !important;
-  }
   #navigation li{
     border-left: 1px dashed #D3D3D3;
     border-right: 1px dashed #D3D3D3;
     display: block;
     margin: 0px 5px;
     padding: 0px 20px;
-  }
-  #page {
-    max-width: device-width !important;
-    min-width: device-width !important;
   }
   #nav{
     text-align: center;
