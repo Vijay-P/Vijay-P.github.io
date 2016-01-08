@@ -144,11 +144,9 @@ p {
 h1{
   text-align: center;
 }
-
 @-ms-viewport{
   width: device-width;
 }
-
 @media only screen and (max-width: 1000px){
   #container, #header, #content, #footer {
     float: none !important;
@@ -231,4 +229,3 @@ h1{
   #resume ul {
     width: 100%;
   }
-}
