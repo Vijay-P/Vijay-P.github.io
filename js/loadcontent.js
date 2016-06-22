@@ -1,0 +1,9 @@
+$(function(){
+  $("#header").load("header.html");
+  $("#footer").load("footer.html");
+  $("#homepage").load("include/homepage.html");
+  $("#portfolio").load("include/portfolio.html");
+  $("#resume").load("include/resume.html");
+  $("#contact").load("include/contact.html");
+  $("#about").load("include/about.html");
+});
