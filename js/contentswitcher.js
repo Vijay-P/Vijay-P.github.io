@@ -1,9 +1,4 @@
 $(document).ready(function () {
-    $("#portfolio").hide();
-    $("#resume").hide();
-    $("#about").hide();
-    $("#contact").hide();
-
     $("#nav1").click(function () {
         hide_all();
         $("#homepage").fadeIn();
