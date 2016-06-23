@@ -75,6 +75,7 @@ a {
     text-decoration:none;
 }
 [id^=nav]{
+    cursor: pointer;
     text-decoration:none;
     color: black;
 }
