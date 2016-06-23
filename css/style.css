@@ -7,18 +7,19 @@ body {
   letter-spacing: 2px;
 }
 #iframepdf{
-  width: 70.3125%;
+  width: 99%;
   float: none;
-  margin-left: 14.84%;
 }
 #index {
   overflow: hidden;
 }
 #ptable{
   padding-right: 40px;
+  padding-left: 0px;
+  width: 95%
 }
 #profile{
-  padding-right: calc(device-width*19.140625%);
+  padding-right: 0%;
   padding-left: 0px;
 }
 #profile-pic{
@@ -33,13 +34,12 @@ body {
   text-shadow: 2px 2px 7px #9D9D9D;
 }
 #page {
-  max-width: 940px;
   min-width: 240px;
   margin: 10px auto 0px auto;
   padding: 20px;
 }
 #bar_navigation {
-  width: calc(max-width * 70.3125%);
+  width: 68%;
   padding: 15px 30px;
   margin: 0px auto 0px auto;
   border-top: 2px solid #000;
@@ -50,9 +50,9 @@ body {
 overflow: auto;
   }
 #psquare {
-  width: 62.5%;
+  width: 99%;
   padding: 2px 2px;
-  margin: 0px auto;
+  margin: 0px;
   border: 0px solid #000;
   text-align: left;
   text-decoration: none;
@@ -69,7 +69,7 @@ overflow: auto;
 #bar_navigation li{
   display: inline;
   margin: 0px 5px;
-  padding: 0px 20px;
+  padding: 0px 2%;
 }
 a {
   text-decoration:none;
@@ -82,7 +82,6 @@ a {
   text-shadow: 2px 2px 7px #9D9D9D;
 }
 p {
-  padding: 0px 245px;
   font-size: 16pt;
 }
 #address {
@@ -129,15 +128,17 @@ p {
   letter-spacing: 1.5pt;
 }
 #about li{
-  padding: 0px;
+  display: list-item;;
+  padding: 5px, 0px;
 }
 #about ul{
-  padding: 0px 295px;
+  padding: 0px 30px;
 }
 h1{
   text-align: center;
 }
 #content {
+  margin:auto;
   width: 62.5%;
   overflow:visible;
 }
