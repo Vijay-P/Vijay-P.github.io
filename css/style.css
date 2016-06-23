@@ -140,5 +140,8 @@ h1{
   text-align: center;
 }
 #content {
-  overflow-y:visible;
+  overflow:visible;
+}
+#contact {
+  overflow-y: auto;
 }
