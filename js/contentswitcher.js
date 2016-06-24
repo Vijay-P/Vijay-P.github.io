@@ -11,8 +11,15 @@ $(document).ready(function () {
     });
     $("#nav3").click(function () {
         hide_all();
-        $("#resume").fadeIn();
-        set_scroll("resume");
+        if (screen.width <= 1000) {
+            $("#resume_mobile").fadeIn();
+            set_scroll("resume_mobile");
+
+        } else {
+            $("#resume").fadeIn();
+            set_scroll("resume");
+
+        }
     });
     $("#nav4").click(function () {
         hide_all();
@@ -30,6 +37,7 @@ function hide_all() {
     $("#homepage").hide();
     $("#portfolio").hide();
     $("#resume").hide();
+    $("#resume_mobile").hide();
     $("#about").hide();
     $("#contact").hide();
 }
