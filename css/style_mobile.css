@@ -10,6 +10,9 @@
         float: none !important;
         width: device-width !important;
     }
+    #content{
+        width: 92%;
+    }
     #bar_navigation li{
         border-left: 1px dashed #D3D3D3;
         border-right: 1px dashed #D3D3D3;
