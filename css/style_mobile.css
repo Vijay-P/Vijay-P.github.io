@@ -2,6 +2,9 @@
     width: device-width;
 }
 @media only screen and (max-width: 1000px){
+    body{
+        overflow: visible;
+    }
     #container, #header, #content, #footer {
         float: none !important;
         width: device-width !important;
