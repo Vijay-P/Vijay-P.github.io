@@ -4,6 +4,7 @@
 @media only screen and (max-width: 1000px){
     body{
         overflow: visible;
+        vertical-align: middle;
     }
     #container, #header, #content, #footer {
         float: none !important;
@@ -46,25 +47,30 @@
     }
     #ptable{
         padding-top: 0px;
-        padding-left: calc(20%);
+        padding-left: 20%;
         width: 62%;
-        margin-left: 19%;
-        margin-right: 19%;
         padding-right: 0px;
     }
     #profile{
-        padding-left: calc(50% - 125px);
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
         padding-right: 0px;
         padding-bottom: 10px;
     }
     #profile-pic{
+        margin-left: auto;
+        margin-right:auto;
         display: block;
         padding-top: 0px;
-        width: 250px;
-        height: 250px;
+        width: 90%;
+        height: 90%;
     }
     #index{
-        display: table-cell;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
     p{
         padding: 0px 15%;
