@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 
 body {
+    overflow: hidden;
     background-color: #F5F5F5;
     font-size: 150%;
     font-family: 'Pathway Gothic One', normal !important;
