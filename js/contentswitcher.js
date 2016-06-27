@@ -44,6 +44,6 @@ function hide_all() {
 
 function set_scroll(id) {
     var h = window.innerHeight;
-    h = h * .5855108877721943;
+    h = h * .65;
     document.getElementById(id).style.height = String(h).concat("px");
 }

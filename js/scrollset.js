@@ -1,6 +1,6 @@
 function scroll(id){
     var h = window.innerHeight;
-    h = h * .5855108877721943;
+    h = h * .636;
     document.getElementById(id).style.height = String(h).concat("px");
 }
 
