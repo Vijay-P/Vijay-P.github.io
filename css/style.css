@@ -50,7 +50,7 @@ body {
 #portfolio {
     overflow: auto;
 }
-#psquare {
+.psquare {
     width: 99%;
     padding: 2px 2px;
     margin: 0px;
@@ -60,12 +60,15 @@ body {
     list-style-type: none;
     background-color: #D8D8D8;
 }
-#psquare_entry{
+.psquare_entry{
     font-size: 14pt;
 }
-#psquare_ec{
+.psquare_ec{
     padding: 0px 20px;
     font-size: 14pt;
+}
+.psquare_header{
+    font-size: 16pt;
 }
 #bar_navigation li{
     display: inline;
@@ -132,6 +135,7 @@ p {
 #about li{
     display: list-item;;
     padding: 5px, 0px;
+    font-size: 16pt;
 }
 #about ul{
     padding: 0px 30px;
@@ -149,4 +153,7 @@ h1{
 }
 #divider {
     cursor: default;
+}
+.bodytext{
+    letter-spacing: 1px;
 }
