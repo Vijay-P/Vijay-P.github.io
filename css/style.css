@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 body {
     overflow: hidden;
@@ -60,9 +61,6 @@ body {
     list-style-type: none;
     background-color: #D8D8D8;
 }
-.psquare_entry{
-    font-size: 14pt;
-}
 .psquare_ec{
     padding: 0px 20px;
     font-size: 14pt;
@@ -85,9 +83,6 @@ a {
 }
 [id^=nav]:hover{
     text-shadow: 2px 2px 7px #9D9D9D;
-}
-p {
-    font-size: 16pt;
 }
 #address {
     padding: 0px 295px;
@@ -134,8 +129,6 @@ p {
 }
 #about li{
     display: list-item;;
-    padding: 5px, 0px;
-    font-size: 16pt;
 }
 #about ul{
     padding: 0px 30px;
@@ -155,5 +148,8 @@ h1{
     cursor: default;
 }
 .bodytext{
+    font-family: 'Raleway', normal !important;
     letter-spacing: 1px;
+    font-size: 12pt;
+    margin-top: 0px;
 }
