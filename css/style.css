@@ -84,9 +84,6 @@ a {
 [id^=nav]:hover{
     text-shadow: 2px 2px 7px #9D9D9D;
 }
-#address {
-    padding: 0px 295px;
-}
 #resume {
     overflow: auto;
     display: block;

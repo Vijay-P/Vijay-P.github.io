@@ -76,10 +76,7 @@
         display: block;
     }
     p{
-        padding: 0px 15%;
-    }
-    #address{
-        padding: 0px 18%;
+        padding: 0px 2%;
     }
     #resume {
         overflow: visible;
@@ -87,17 +84,22 @@
     #contact {
         overflow: visible;
     }
+    #contact_cont {
+        padding: 0px 15%
+    }
     #skillset {
         overflow: visible;
     }
     #portfolio {
         overflow: visible;
+        padding: 0px 15%;
     }
     #about{
         overflow: visible;
+        padding: 0px 15%;
     }
     #about ul{
-        padding: 0px 18%;
+        padding: 0px 8%;
     }
     #resume ul {
         width: 100%;
