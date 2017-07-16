@@ -1,15 +1,15 @@
-$(document).ready(function () {
-    $("#nav1").click(function () {
+$(document).ready(function() {
+    $("#nav1").click(function() {
         hide_all();
         $("#homepage").fadeIn();
         set_scroll("index");
     });
-    $("#nav2").click(function () {
+    $("#nav2").click(function() {
         hide_all();
-        $("#portfolio").fadeIn();
-        set_scroll("portfolio");
+        $("#skillset").fadeIn();
+        set_scroll("skillset");
     });
-    $("#nav3").click(function () {
+    $("#nav3").click(function() {
         hide_all();
         if (screen.width <= 1000) {
             $("#resume_mobile").fadeIn();
@@ -21,12 +21,12 @@ $(document).ready(function () {
 
         }
     });
-    $("#nav4").click(function () {
+    $("#nav4").click(function() {
         hide_all();
-        $("#about").fadeIn();
-        set_scroll("about");
+        $("#portfolio").fadeIn();
+        set_scroll("portfolio");
     });
-    $("#nav5").click(function () {
+    $("#nav5").click(function() {
         hide_all();
         $("#contact").fadeIn();
         set_scroll("contact");
@@ -39,6 +39,7 @@ function hide_all() {
     $("#resume").hide();
     $("#resume_mobile").hide();
     $("#about").hide();
+    $("#skillset").hide();
     $("#contact").hide();
 }
 
