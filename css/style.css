@@ -48,7 +48,7 @@ body {
     border-bottom: 2px solid #000;
     text-align: center;
 }
-#portfolio, #skillset {
+#portfolio, #skillset, #blog {
     overflow: auto;
 }
 .psquare {
@@ -149,4 +149,16 @@ h1{
     letter-spacing: 1px;
     font-size: 12pt;
     margin-top: 0px;
+}
+.date{
+    display: inline;
+    float: right;
+}
+.title{
+    display: inline;
+    float: left;
+}
+.blogv{
+    display: grid;
+    margin-bottom: 5px;
 }

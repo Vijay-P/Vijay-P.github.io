@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_mobile.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(document).load(function() {
+            document.body.style.zoom = "100%";
+        });
+    </script>
+    <script>
+        $(function() {
+            $("#header").load("../include/header.html");
+        });
+    </script>
+    <script>
+        $(function() {
+            var h = window.innerHeight;
+            h = h * .65;
+            document.getElementById("blog").style.height = String(h).concat("px");
+        });
+    </script>
+</head>
+
+<body>
+    <!--Header-->
+    <div id="header"></div>
+    <div id="content">
+        <div id="blog_cont">
+            <div id="blog">
+                <p class="ptitle"><b>Blog Posts</b></p>
+                <ul class="psquare blogv">
+                    <li>
+                        <a class="psquare_entry" href="blog/p1.html">
+                            <div class="psquare_ec">
+                                <div class="title">
+                                    <b>On Thinking Like an Innovator</b>
+                                </div>
+                                <div class="date">
+                                    08/01/17
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+</ul>
+</div>
+</div>
+</div>
+</body>
+
+</html>
