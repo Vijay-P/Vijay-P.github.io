@@ -13,20 +13,17 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
-        $(document).load(function() {
-            document.body.style.zoom = "100%";
-        });
-        $(document).ready(function() {
-            document.title = "Homepage";
-            history.pushState({
-                path: "homepage"
-            }, '', "homepage");
-        });
-    </script>
     <script src="js/loadcontent.js"></script>
     <script src="js/scrollset.js"></script>
     <script src="js/initialhide.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#homepage").hide();
+        });
+        $(document).load(function() {
+            document.body.style.zoom = "100%";
+        });
+    </script>
 </head>
 
 <body>
