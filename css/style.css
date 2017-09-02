@@ -171,3 +171,6 @@ h1{
     height: .3vh;
     overflow: scroll;
 }
+#tagline{
+    font-size: 70%;
+}
