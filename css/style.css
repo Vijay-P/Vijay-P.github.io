@@ -48,7 +48,7 @@ body {
     border-bottom: 2px solid #000;
     text-align: center;
 }
-#portfolio, #skillset, #blog {
+#portfolio, #skillset, #blog, #blog_cont{
     overflow: auto;
 }
 .psquare {
