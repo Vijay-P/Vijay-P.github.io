@@ -2,24 +2,7 @@
 
 <head>
     <script>
-        $("#p1").load("/include/blog/p1.html");
-        $("#p1").toggle();
-        $("#p1_s").click(function() {
-            postToggle("p1");
-        });
-
-        function postToggle(id) {
-            if ($("#" + id + "_s").hasClass("toggled")) {
-                $("#" + id + "_s").animate({
-                    "height": "1em"
-                }).removeClass("toggled");
-            } else {
-                $("#" + id + "_s").animate({
-                    "height": "12em"
-                }).addClass("toggled");
-            }
-            $("#" + id).toggle();
-        }
+        setup("#p1")
     </script>
 </head>
 
