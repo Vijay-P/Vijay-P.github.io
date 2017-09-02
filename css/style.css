@@ -48,7 +48,7 @@ body {
     border-bottom: 2px solid #000;
     text-align: center;
 }
-#portfolio, #skillset, #blog, #blog_cont{
+#portfolio, #skillset, #blog{
     overflow: auto;
 }
 .psquare {
@@ -71,7 +71,7 @@ body {
 #bar_navigation li{
     display: inline;
     margin: 0px 4px;
-    padding: 0px 2%;
+    padding: 0px 1.25%;
 }
 a {
     text-decoration:none;
@@ -161,4 +161,13 @@ h1{
 .blogv{
     display: grid;
     margin-bottom: 5px;
+    cursor: pointer;
+    overflow-y: auto;
+}
+.blog_cont{
+    box-sizing: border-box;
+}
+#ps_1.expand{
+    height: .3vh;
+    overflow: scroll;
 }

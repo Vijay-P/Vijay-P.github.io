@@ -4,5 +4,6 @@ $(document).ready(function() {
     $("#resume_mobile").hide();
     $("#about").hide();
     $("#skillset").hide();
+    $("#blog").hide();
     $("#contact").hide();
 });

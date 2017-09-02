@@ -7,5 +7,6 @@ $(function() {
     $("#resume_mobile").load("/include/resume_mobile.html");
     $("#contact").load("/include/contact.html");
     $("#about").load("/include/about.html");
+    $("#blog").load("/include/blog.html")
     $("#skillset").load("/include/skillset.html");
 });

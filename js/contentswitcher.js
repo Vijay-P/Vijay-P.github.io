@@ -17,6 +17,9 @@ $(document).ready(function() {
         loadport();
     });
     $("#nav5").click(function() {
+        loadblog();
+    });
+    $("#nav6").click(function() {
         loadcontact();
     });
 });
@@ -24,7 +27,7 @@ $(document).ready(function() {
 function loadhome() {
     hide_all();
     $("#homepage").fadeIn();
-    set_scroll("index");
+    set_scroll("homepage");
     history.pushState({
         path: "homepage"
     }, '', "homepage");
@@ -46,6 +49,7 @@ function loadskill() {
     hide_all();
     $("#skillset").fadeIn();
     set_scroll("skillset");
+    console.log("scroll set");
     history.pushState({
         path: "skillset"
     }, '', "skillset");
@@ -87,6 +91,18 @@ function loadport() {
     document.getElementById('nav4').style.textDecoration = "underline";
 }
 
+function loadblog() {
+    hide_all();
+    $("#blog").fadeIn();
+    set_scroll("blog");
+    history.pushState({
+        path: "blog"
+    }, '', "blog");
+    document.title = "Blog";
+    resetAll();
+    document.getElementById('nav5').style.textDecoration = "underline";
+}
+
 function loadcontact() {
     hide_all();
     $("#contact").fadeIn();
@@ -96,7 +112,7 @@ function loadcontact() {
     }, '', "contact");
     document.title = "Contact";
     resetAll();
-    document.getElementById('nav5').style.textDecoration = "underline";
+    document.getElementById('nav6').style.textDecoration = "underline";
 }
 
 function hide_all() {
@@ -106,12 +122,13 @@ function hide_all() {
     $("#resume_mobile").hide();
     $("#about").hide();
     $("#skillset").hide();
+    $("#blog").hide();
     $("#contact").hide();
 }
 
 function set_scroll(id) {
     var h = window.innerHeight;
-    h = h * .65;
+    h = h * 0.65;
     document.getElementById(id).style.height = String(h).concat("px");
 }
 
@@ -133,6 +150,9 @@ function redirect() {
     }
     if (event.state.path == "skillset") {
         loadskill();
+    }
+    if (event.state.path == "blog") {
+        loadblog();
     }
     if (event.state.path == "contact") {
         loadcontact();
@@ -159,6 +179,9 @@ function redirectverb() {
     if (verb == "skillset") {
         loadskill();
     }
+    if (verb == "blog") {
+        loadblog();
+    }
     if (verb == "contact") {
         loadcontact();
     }
@@ -170,4 +193,5 @@ function resetAll() {
     document.getElementById('nav3').style.textDecoration = "initial";
     document.getElementById('nav4').style.textDecoration = "initial";
     document.getElementById('nav5').style.textDecoration = "initial";
+    document.getElementById('nav6').style.textDecoration = "initial";
 }
