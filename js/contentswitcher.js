@@ -1,3 +1,10 @@
+$(document).ready(function() {
+    var pages = ["about", "resume", "resume_mobile", "portfolio", "skillset", "blog", "contact"];
+    for (var i = 0; i < pages.length; i++) {
+        $("#" + pages[i]).hide();
+    }
+});
+
 var MOBILE = ["resume"];
 
 window.onpopstate = function(event) {
