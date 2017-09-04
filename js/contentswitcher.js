@@ -1,118 +1,72 @@
+var MOBILE = ["resume"];
+
 window.onpopstate = function(event) {
-    redirect();
+    redirect(event.state.path);
 };
 
 $(document).ready(function() {
-    redirectverb();
+    redirect(document.URL.substr(document.URL.lastIndexOf('/') + 1));
     $("#nav1").click(function() {
-        loadhome();
+        loadPage("homepage", this.id);
     });
     $("#nav2").click(function() {
-        loadskill();
+        loadPage("skillset", this.id);
     });
     $("#nav3").click(function() {
-        loadresume();
+        loadPage("resume", this.id);
     });
     $("#nav4").click(function() {
-        loadport();
+        loadPage("portfolio", this.id);
     });
     $("#nav5").click(function() {
-        loadblog();
+        loadPage("blog", this.id);
     });
     $("#nav6").click(function() {
-        loadcontact();
+        loadPage("contact", this.id);
     });
 });
 
-function loadhome() {
-    hide_all();
-    $("#homepage").fadeIn();
-    set_scroll("homepage");
-    history.pushState({
-        path: "homepage"
-    }, '', "homepage");
-    document.title = "Homepage";
-    resetAll();
-    document.getElementById('nav1').style.textDecoration = "underline";
-}
-
-function loadabout() {
-    hide_all();
-    $("#about").fadeIn();
-    set_scroll("about");
-    history.pushState({
-        path: "about"
-    }, '', "about");
-}
-
-function loadskill() {
-    hide_all();
-    $("#skillset").fadeIn();
-    set_scroll("skillset");
-    console.log("scroll set");
-    history.pushState({
-        path: "skillset"
-    }, '', "skillset");
-    document.title = "Skillset";
-    resetAll();
-    document.getElementById('nav2').style.textDecoration = "underline";
-}
-
-function loadresume() {
-    hide_all();
-    if (screen.width <= 1000) {
-        $("#resume_mobile").fadeIn();
-        set_scroll("resume_mobile");
-        history.pushState({
-            path: "resume_mobile"
-        }, '', "resume_mobile");
-    } else {
-        $("#resume").fadeIn();
-        set_scroll("resume");
-        history.pushState({
-            path: "resume"
-        }, '', "resume");
-
+function redirect(input) {
+    if (input == "homepage") {
+        loadPage("homepage", "nav1");
     }
-    document.title = "Resume";
-    resetAll();
-    document.getElementById('nav3').style.textDecoration = "underline";
+    if (input == "portfolio") {
+        loadPage("portfolio", "nav2");
+    }
+    if (input == "resume" || input == "resume_mobile") {
+        loadPage("resume", "nav3");
+    }
+    if (input == "about") {
+        loadPage("about", "nav4");
+    }
+    if (input == "skillset") {
+        loadPage("skillset", "nav5");
+    }
+    if (input == "blog") {
+        loadPage("blog", "nav6");
+    }
+    if (input == "contact") {
+        loadPage("contact", "nav7");
+    }
 }
 
-function loadport() {
+function loadPage(id, navid) {
     hide_all();
-    $("#portfolio").fadeIn();
-    set_scroll("portfolio");
+    if ((screen.width <= 1000) && (MOBILE.indexOf(id) > -1)) {
+        id += "_mobile";
+    }
+    $("#" + id).fadeIn();
+    setScroll(id);
     history.pushState({
-        path: "portfolio"
-    }, '', "portfolio");
-    document.title = "Portfolio";
+        path: id
+    }, '', id);
+    document.title = titleCase(id);
     resetAll();
-    document.getElementById('nav4').style.textDecoration = "underline";
+    document.getElementById(navid).style.textDecoration = "underline";
 }
 
-function loadblog() {
-    hide_all();
-    $("#blog").fadeIn();
-    set_scroll("blog");
-    history.pushState({
-        path: "blog"
-    }, '', "blog");
-    document.title = "Blog";
-    resetAll();
-    document.getElementById('nav5').style.textDecoration = "underline";
-}
-
-function loadcontact() {
-    hide_all();
-    $("#contact").fadeIn();
-    set_scroll("contact");
-    history.pushState({
-        path: "contact"
-    }, '', "contact");
-    document.title = "Contact";
-    resetAll();
-    document.getElementById('nav6').style.textDecoration = "underline";
+function titleCase(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 function hide_all() {
@@ -126,65 +80,11 @@ function hide_all() {
     $("#contact").hide();
 }
 
-function set_scroll(id) {
+function setScroll(id) {
+    console.log(id);
     var h = window.innerHeight;
     h = h * 0.65;
     document.getElementById(id).style.height = String(h).concat("px");
-}
-
-function redirect() {
-    if (event.state.path == "homepage") {
-        loadhome();
-    }
-    if (event.state.path == "portfolio") {
-        loadport();
-    }
-    if (event.state.path == "resume") {
-        loadresume();
-    }
-    if (event.state.path == "resume_mobile") {
-        loadresume();
-    }
-    if (event.state.path == "about") {
-        loadabout();
-    }
-    if (event.state.path == "skillset") {
-        loadskill();
-    }
-    if (event.state.path == "blog") {
-        loadblog();
-    }
-    if (event.state.path == "contact") {
-        loadcontact();
-    }
-}
-
-function redirectverb() {
-    verb = document.URL.substr(document.URL.lastIndexOf('/') + 1);
-    if (verb == "homepage") {
-        loadhome();
-    }
-    if (verb == "portfolio") {
-        loadport();
-    }
-    if (verb == "resume") {
-        loadresume();
-    }
-    if (verb == "resume_mobile") {
-        loadresume();
-    }
-    if (verb == "about") {
-        loadabout();
-    }
-    if (verb == "skillset") {
-        loadskill();
-    }
-    if (verb == "blog") {
-        loadblog();
-    }
-    if (verb == "contact") {
-        loadcontact();
-    }
 }
 
 function resetAll() {
