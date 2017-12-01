@@ -174,3 +174,10 @@ h1{
 #tagline{
     font-size: 70%;
 }
+#video_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
