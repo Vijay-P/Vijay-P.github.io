@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	var pages = ["about", "resume", "resume_mobile", "portfolio", "skillset", "blog", "contact"];
+    var pages = ["about", "resume", "resume_mobile", "portfolio", "skillset", "contact"];
 	for (var i = 0; i < pages.length; i++) {
 		$("#" + pages[i]).hide();
 	}
@@ -23,9 +23,6 @@ $(document).ready(function() {
 		loadPage("portfolio", this.id);
 	});
 	$("#nav4").click(function() {
-		loadPage("blog", this.id);
-	});
-	$("#nav5").click(function() {
 		loadPage("contact", this.id);
 	});
 });
@@ -40,11 +37,8 @@ function redirect(input) {
 	if (input == "portfolio") {
 		loadPage("portfolio", "nav3");
 	}
-	if (input == "blog") {
-		loadPage("blog", "nav4");
-	}
 	if (input == "contact") {
-		loadPage("contact", "nav5");
+		loadPage("contact", "nav4");
 	}
 }
 
@@ -72,9 +66,6 @@ function hide_all() {
 	$("#portfolio").hide();
 	$("#resume").hide();
 	$("#resume_mobile").hide();
-	$("#about").hide();
-	$("#skillset").hide();
-	$("#blog").hide();
 	$("#contact").hide();
 }
 
@@ -90,5 +81,4 @@ function resetAll() {
 	document.getElementById('nav2').style.textDecoration = "initial";
 	document.getElementById('nav3').style.textDecoration = "initial";
 	document.getElementById('nav4').style.textDecoration = "initial";
-	document.getElementById('nav5').style.textDecoration = "initial";
 }
